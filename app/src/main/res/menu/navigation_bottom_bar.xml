@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Home_tab"
+        android:title="Home"
+        android:icon= "@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/trasactionPage"
+        android:title="Trasctiop"
+        android:icon="@drawable/baseline_person_24"/>
+    <item
+        android:id="@+id/aboutPage"
+        android:title="About App"
+        android:icon="@drawable/baseline_settings_24"/>
+</menu>

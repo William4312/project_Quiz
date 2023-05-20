@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="parentLabel">
+        <item name="android:textSize">10dp</item>
+        <item name="android:keyTextSize">8dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="rounded_modelImage" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="color">@color/white</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ButtonModelText" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="layout_marginBaseline">3dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+        <item name="cornerRadius">15dp</item>
+    </style>
+    <style name="CustomTextInputLayoutStyle.ErrorTextStyle" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="ButtonText" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="layout_marginBaseline">2dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+    <style name="AppTheme">AppTheme</style>
+    <style name="Rounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+        <item name="textFillColor">#7B8FA1</item>
+        <item name="android:keyTextSize">3sp</item>
+    </style>
+    <style name="modelDesain" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">1sp</item>
+    </style>
+    <style name="fontStyle">
+        <item name="fontFamily">sans-serif</item>
+    </style>
+</resources>

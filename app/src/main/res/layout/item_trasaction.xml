@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="14dp"
+    android:layout_margin="14dp"
+    android:id="@+id/cardView_medichine"
+    app:cardBackgroundColor="#F5F5F5"
+    android:layout_height="165dp"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/style_background"
+            android:columnCount="2">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account ID: "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/user_idCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="US00"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account Name: "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/user_idName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="William Gunawan"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_marginRight="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:text="Detail Traction list medichine"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medichine name : "
+                        android:textColor="@color/black_default"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:id="@+id/name_medichine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="obat kumul"
+                        android:textSize="9sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date : "
+                        android:textColor="@color/black_default"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:id="@+id/date_trasaction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thu, 12 jan 2020"
+                        android:textSize="9sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price: "
+                        android:textColor="@color/black_default"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:id="@+id/price_medichinetrasactionTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. 23.000"
+                        android:textSize="9sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_default"
+                        android:text="Quantity: "
+                        android:textSize="10sp" />
+                    <TextView
+                        android:id="@+id/quantity_countNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textSize="9sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </GridLayout>
+        <LinearLayout
+            android:layout_marginTop="13dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                app:boxStrokeColor="@color/cardview_dark_background"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="1dp"
+                android:scrollbarStyle="outsideInset"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:hintTextAppearance="@style/parentLabel"
+                app:hintTextColor="#7B8FA1"
+                android:id="@+id/quantity_columnUpdateData"
+                app:errorTextAppearance="@style/CustomTextInputLayoutStyle.ErrorTextStyle"
+                app:shapeAppearance="@style/Rounded"
+                app:startIconDrawable="@drawable/baseline_countertops_24"
+                app:startIconScaleType="center">>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="18dp"
+                    android:textColor="#7B8FA1"
+                    android:id="@+id/editTextQuantity"
+                    android:textSize="10dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/update_quantity"
+                android:layout_gravity="left"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"/>
+            <Button
+                android:id="@+id/delete_quantity"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

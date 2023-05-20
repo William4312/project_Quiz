@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context=".login">
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameTemp"/>
+        <TextView
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="30dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeColor="@color/cardview_dark_background"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+            android:layout_below="@+id/Register"
+            android:scrollbarStyle="outsideInset"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:hint="email"
+            app:hintEnabled="true"
+            app:hintTextAppearance="@style/parentLabel"
+            app:hintTextColor="#7B8FA1"
+            android:id="@+id/email"
+            app:errorTextAppearance="@style/CustomTextInputLayoutStyle.ErrorTextStyle"
+            app:shapeAppearance="@style/Rounded"
+            app:startIconDrawable="@drawable/baseline_email_24"
+            app:startIconScaleType="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="18dp"
+                android:textColor="#7B8FA1"
+                android:textSize="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeColor="@color/cardview_dark_background"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+            android:scrollbarStyle="outsideInset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_below="@+id/email"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            android:hint="password"
+            app:hintEnabled="true"
+            app:hintTextAppearance="@style/parentLabel"
+            android:autofillHints="password"
+            app:hintTextColor="#7B8FA1"
+            app:hintAnimationEnabled="true"
+            android:id="@+id/password"
+            app:shapeAppearance="@style/Rounded"
+            app:startIconDrawable="@drawable/baseline_lock_24"
+            app:startIconScaleType="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:paddingLeft="18dp"
+                android:textColor="#7B8FA1"
+                android:textSize="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            style="@style/ButtonModelText"
+            android:layout_width="150dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:text="Sign In"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/button_login"
+            android:backgroundTint="#CEEDC7"
+            android:textColor="@color/black_default"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/button_login"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Don't have a account ?"/>
+                <Button
+                    android:id="@+id/button_to_register"
+                    style="@style/ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:backgroundTint="#AD95DA"
+                    android:backgroundTintMode="src_over"
+                    android:fontFamily="sans-serif-medium"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Go to Register page"
+                    android:textAlignment="center"
+                    android:textSize="9dp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    android:visibility="visible"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="#6A6464"
+                    app:strokeWidth="1dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

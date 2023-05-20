@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".AboutFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apotek Bluejack is a pharmacy founded by the Bluejackets Community.Today, it is one of the best pharmacies in Indonesia. \nCurrently, they are trying to reach more customers by \ncreating a mobile application based on the Android operating system \nthat can be downloaded by customers, thus increasing \nthe popularity of Apotek Bluejack in the development of marketing medicinal\nproducts that can be organized online making it \neasier for customers in order to shorten the interaction \ndistance of the buying and selling process that can take place in the customer area."
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp" />
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="340dp"
+        android:layout_height="320dp"
+        app:cardElevation="9dp"
+        app:cardCornerRadius="18dp"
+        app:cardBackgroundColor="#F5F5F5">
+        <fragment
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="320dp"
+            android:id="@+id/flame_fragmentGoogleMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
